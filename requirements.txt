@@ -1,0 +1,2 @@
+selenium==2.20.0
+wsgiref==0.1.2

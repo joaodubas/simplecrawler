@@ -1,0 +1,9 @@
+# FILES
+*.sublime*
+*.pyc
+._*
+
+# DIRS
+.DS*
+.codeintel
+
