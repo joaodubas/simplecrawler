@@ -1,4 +1,3 @@
-#!/usr/bin/env python
 # encoding: utf-8
 
 """Simple crawler to retrieve physicians registered on AMIL website.
@@ -11,7 +10,7 @@ first city of all states and record on log.txt.
 import bs4
 import urllib
 import urllib2
-from uf import Location
+from core.helper.uf import Location
 
 def _extract_names(root):
     """Extract the name of the physicians, contained on the html source.
@@ -108,13 +107,7 @@ class Physician(object):
 
 
 if __name__ == '__main__':
-    import sys
-
-    if len(sys.argv) > 1 and '--test' in sys.argv:
-        import doctest
-        doctest.testmod(extraglobs={
-            'p': Physician(),
-        })
-    else:
-        cardiol = Physician()
-        cardiol.logger()
+    import doctest
+    doctest.testmod(extraglobs={
+        'p': Physician(),
+    })

@@ -1,10 +1,9 @@
-#!/usr/bin/env python
 # encoding: utf-8
 
 """Helper module, that obtains states and cities available on AMIL website."""
 
 import urllib
-from crawler import Crawler
+from core.helper.crawler import Crawler
 try:
     import json
 except ImportError:

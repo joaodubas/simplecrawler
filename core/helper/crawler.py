@@ -1,4 +1,3 @@
-#!/usr/bin/env python
 # encoding: utf-8
 
 """Simple wrapper from webdriver, exposing only a set of operations."""
